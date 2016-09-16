@@ -1,0 +1,87 @@
+<html>
+<head>
+<title>ADMIN</title>
+</head>
+<script src="js/jquery-1.12.1.min.js"></script>
+<body>
+<center><form action="store.php" method="post" enctype="multipart/form-data">
+<span>Selct type:</span>
+	NORMAL:<input type="radio" name="tye" id="ss" value="normal"><br>
+	UPCOMING:<input type="radio" name="tye" id="sa" value="upcom"><br>
+	videos:<input type="radio" name="tye" id="se" value="vid"><br>
+<br>
+<script>
+$(document).ready(function(){
+	$("#ss").click(function(){
+		$("#normal").show();
+		$("#sec").hide();
+		$("#thi").hide();
+	});
+	$("#sa").click(function(){
+		$("#sec").show();
+		$("#normal").hide();
+		$("#thi").hide();
+	});
+	$("#se").click(function(){
+		$("#thi").show();
+		$("#normal").hide();
+		$("#sec").hide();
+	});
+});
+</script>
+<div id="normal" style="display:none;">
+Enter brand:<input type="text" name="brand"><br>
+Enter model:<input type="text" name="model"><br>
+Cost:<input type="text" name="cost"><br>
+Millege:<input type="text" name="millage"><br>
+Engine:<input type="text" name="engine"><br>
+Cruise control:<input type="text" name="cruis">yes or no<br>
+parking sensor<input type="text" name="parkisen">yes or no<br>
+Duration:<input type="text" name="duaration"><br>
+performance:<input type="text" name="perfor"><br>
+comfort:<input type=""text" name="comfort"><br>
+safety:<input type="text" name="safety"><br>
+Automatic:<input type="text" name="automat"><br>
+rear ac vents:<input type="text" name="reaac"><br>
+abs:<input type="text" name="abs"><br>
+driver air bag:<input type="text" name="draibag">yes or no<br>
+Sun roof:<input type="text" name="roof">yes or no<br>
+Car Photo:<input type="file" name="file"><br>
+spare photos:
+<span>Exterior</span><input type="file" name="exp1"><br>
+<span>Milege</span><input type="file" name="exp2"><br>
+<span>Performance</span><input type="file" name="exp3"><br>
+<span>Comfort</span><input type="file" name="exp4"><br>
+<span>Safety</span><input type="file" name="exp5"><br>
+<span>Other</span><input type="file" name="exp6"><br>
+<span>browcher</span><input type="file" name="exp7"><br>
+<textarea col="40" rows="7" name="desc">Description:</textarea>
+<input type="submit" value="ADD CAR MODEL">
+</form></center>
+</div>
+<div id="sec" style="display:none;">
+<form action="store.php" method="post" enctype="multipart/form-data">
+<span>Selct type:</span>
+	NORMAL:<input type="radio" name="tye" id="ss" value="normal">
+	UPCOMING:<input type="radio" name="tye" id="sa" value="upcom">
+<span>Enter brand:</span><input type="text" name="brand"><br>
+<span>Enter model:</span><input type="text" name="model"><br>
+<span><input type="file" name="file">
+<textarea col="40" rows="7" name="desc">Description:</textarea>
+<input type="submit">
+</form>
+</div>
+<div id="thi" style="display:none;">
+<form action="store.php" method="post" enctype="multipart/form-data">
+<span>Selct type:</span>
+	NORMAL:<input type="radio" name="tye" value="normal">
+	UPCOMING:<input type="radio" name="tye" value="upcom">
+	video:<input type="radio"name="tye" value="videoo">
+<span>Enter brand:</span><input type="text" name="brand"><br>
+<span>Enter model:</span><input type="text" name="model"><br>
+<span><input type="file" name="file">
+<input type="submit">
+</form>
+</div>
+</body>
+</html>

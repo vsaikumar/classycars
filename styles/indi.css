@@ -1,0 +1,110 @@
+body,html {
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+	padding: 0px;
+	background-size: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+html {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	margin: 0px;
+	background-color: white;
+	padding: 0px;
+}
+#topheader{
+	position:relative;
+	left:0px;
+	right:0px;
+	width:100%;
+	background-color:black;
+	text-align: center;
+	opacity:0.5;
+}
+#downheader{
+	top:0px;
+	position:relative;
+	left:0px;
+	right:0px;
+	width:100%;
+	z-index: 100;
+	text-align: center;
+	background-color:rgba(0,0,0,0.3);
+}
+span,label{
+	color:#ffffff;
+}
+#home:hover,#new:hover,#compare:hover,#nr:hover{
+		background-color:red;
+		color:white;
+}
+.dropbtn {
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.dropdown {
+    display: inline-block;
+    z-index: 100;
+}
+.dropdown-content {
+    display: none;
+    z-index: 110;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    font-size:12px;
+	color: black;
+	background-color:red;
+    padding: 5px 5px;
+    text-decoration: none;
+    display: block;
+    z-index: 130;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    position: absolute;
+    z-index: 100;
+	background-color:black;
+	opacity:1;
+}
+#fir,#sec,#thi,#for,#fif,#six{
+	background-color:black;
+	opacity:0.9;
+	border-left:10px;
+	color: black;
+	border-color:black;
+	cursor:pointer;
+	font-family:calibri;
+	font-size:20px;
+	border:2px solid blue;
+	box-shadow:3px 3px 3px rgba(0,0,0,1);
+	color:white;
+}
+#pho{
+	border-radius:10px;
+	padding-left:0px;
+	position:absolute;
+	top:150%;
+}
+#spe,#com,#news,#phos{
+	color:white;
+	background-color:#1abc9c !important;
+	padding:10px;
+	border-color:#1abc9c !important;
+	border-radius:2px;
+	margin-left:5%;
+}
